@@ -1,0 +1,12 @@
+// font
+@import '../fonts/font';
+// base
+@import './base/base';
+@import './base/colors';
+// components
+@import '../../components/layout/scss/index.scss';
+@import '../../components/slider/scss/index.scss';
+// pages
+@import './pages/dashboard/index.scss';
+@import './pages/notFound/index.scss';
+@import './pages/products/index.scss';

@@ -1,0 +1,76 @@
+// layout
+.wrapperHeader{
+    direction: rtl;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $Meteorite;
+    color: #fff;
+    font-family: 'iranSans';
+    font-size: 14.5px;
+    .wrapperIconSlider , .wrapperUser{
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+        .userIcon{
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgb(227, 227, 255);
+            border-radius: 50%;
+            padding: 3px; 
+        }
+        span{
+            padding-right: 5px;
+        }
+    }
+}
+.wrapperMenu{
+    direction: rtl;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'iranSans';
+    color: #fff;
+    padding-top: 40px;
+    img{
+        width: 120px;
+        height: 120px;
+        border: 2px solid rgb(227, 227, 255);
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    hr{
+        width: 100%;
+        border: 1px solid rgb(227, 227, 255);
+        margin: 10px 0px;
+    }
+    ul{
+        width: 100%;
+        list-style-type: none;
+        text-align: right;
+        li{
+            padding: 6px 0px;
+            cursor: pointer;
+            .link{
+                display: inline-block;
+                width: 100%;
+                color: #fff;
+                text-decoration: none;
+                padding: 0px 10px;
+                &:hover{
+                    color: #000;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

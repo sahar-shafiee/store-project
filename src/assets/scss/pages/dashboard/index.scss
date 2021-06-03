@@ -1,0 +1,50 @@
+// dashboard
+.wrapperDashboard{
+    background-color: #f1f2f7;
+    height: 92vh;
+    padding: 100px;
+    display: flex;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'iranSans';
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        -webkit-box-shadow: 0 10px 15px rgba(0,0,0,.1) ;
+        box-shadow: 0 10px 15px rgba(0,0,0,.1) ;
+        -webkit-transition: .5s;
+        transition: .5s;
+        color: #fff;
+        &:hover{
+            -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+        .fa{
+            color:#fff;
+            font-size: 60px;
+            width: 100px;
+            height: 100px;
+            border-radius:  50%;
+            text-align: center;
+            line-height: 100px;
+            -webkit-box-shadow: 0 10px 10px rgba(0,0,0,.1) ;
+            box-shadow: 0 10px 10px rgba(0,0,0,.1) ;
+        }
+        h2{
+            margin: 12px 0px;
+        }
+    }
+    .first{
+        background: linear-gradient(-45deg,#fe0847,#feae3f);
+    }
+    .second{
+        background: linear-gradient(-45deg,#24ff72,#9a4eff);
+    }
+    .third{
+        background: linear-gradient(-45deg,#ffec61,#f321d7);
+    }
+}

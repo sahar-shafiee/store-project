@@ -1,12 +1,17 @@
+// node libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Router from './Router';
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
+import { Store } from './redux/store';
+// scss
+import './assets/scss/all.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={Store}>
+    <Router />
+  </Provider>,
   document.getElementById('root')
 );
 

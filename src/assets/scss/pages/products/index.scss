@@ -1,0 +1,43 @@
+@import './table.scss';
+@import './add.scss';
+// products page
+.wrapperProducts{
+    width: 100%;
+    height: 90vh;
+    direction: rtl;
+    font-family: 'iranSans';
+    .headerProducts{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        input{
+            width: 300px;
+            height: 40px;
+            border: 2px solid $Mulberry;
+            border-radius: 25px;
+            padding: 0px 10px;
+            outline: none;
+            font-family: 'iranSans';
+        }
+        .addButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 200px;
+            height: 40px;
+            background-color: $Mulberry;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-family: 'iranSans';
+            cursor: pointer;
+            &:hover{
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+    }
+}
