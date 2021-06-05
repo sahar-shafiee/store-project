@@ -10,8 +10,10 @@ import { deleteProduct } from './methods/deleteProduct';
 
 const Tbody: React.FC<ComponentType> = ({ getProductsData, products }) => {
     useEffect(() => {
-        getProductsData(productTableData);
-    }, [getProductsData]);
+        if (products.length === 0) {
+            getProductsData(productTableData);
+        }
+    }, [getProductsData, products.length]);
     return (
         <tbody>
             {products.length > 0 ? products.map((value, index) => {
@@ -32,7 +34,7 @@ const Tbody: React.FC<ComponentType> = ({ getProductsData, products }) => {
                     </tr>
                 )
             }) : <tr>
-                <td colSpan={5}>داده ای موجود نیست</td>
+                <td colSpan={6}>داده ای موجود نیست</td>
             </tr>
             }
         </tbody>

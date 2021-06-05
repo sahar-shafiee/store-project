@@ -30,7 +30,9 @@ export function addData(
     } | any = {}
 
     for (let i: number = 0; i < inputs.length; i++) {
-        data[inputs[i].id] = inputs[i].value
+        if (inputs[i].id !== "") {
+            data[inputs[i].id] = inputs[i].value
+        }
     }
     data.status = selectBox?.value;
 
