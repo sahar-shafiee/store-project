@@ -1,5 +1,5 @@
-export interface InitInterface {
-    products: {
+export interface Columns {
+    editData: {
         id: number,
         name: string,
         number: string,
@@ -9,6 +9,5 @@ export interface InitInterface {
         status: string,
         weight: number,
         weightPackaging: number
-    }[]
+    } | undefined
 }
-

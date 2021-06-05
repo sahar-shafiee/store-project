@@ -1,5 +1,6 @@
 // node libraries
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { connect, ConnectedProps } from 'react-redux';
 // methods
 import { mapState } from './methods/mapState';
@@ -20,6 +21,11 @@ const Tbody: React.FC<ComponentType> = ({ getProductsData, products }) => {
                         <td>{value.name}</td>
                         <td>{value.number}</td>
                         <td>{value.price}</td>
+                        <td>
+                            <Link to={`/add-products/?id=${value.id}`} style={{ textDecoration: 'none' }}>
+                                ویرایش
+                            </Link>
+                        </td>
                         <td className="deleteTd" onClick={() => {
                             deleteProduct(products, getProductsData, value.name);
                         }}>حذف</td>

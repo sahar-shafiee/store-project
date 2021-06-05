@@ -9,6 +9,7 @@ const Thead: React.FC = () => {
                 <th>عنوان</th>
                 <th>موجودی</th>
                 <th>قیمت</th>
+                <th>ویرایش</th>
                 <th>حذف</th>
             </tr>
         </thead>
