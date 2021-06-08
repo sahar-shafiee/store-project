@@ -46,7 +46,7 @@ export function EditData(
             data[inputs[i].id] = inputs[i].value
         }
         data.status = selectBox?.value;
-
+        data.id = editData.id;
         products[index] = data;
         getProductsData(products);
     }

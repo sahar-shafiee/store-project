@@ -35,7 +35,7 @@ export function addData(
         }
     }
     data.status = selectBox?.value;
-
+    data.id = Math.floor((Math.random() * 10) + 1000);
     products.push(data);
     mapDispatch(products);
 }
