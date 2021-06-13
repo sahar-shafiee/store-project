@@ -26,7 +26,9 @@ export function addData(
         discountedPrice: number,
         status: string,
         weight: number,
-        weightPackaging: number
+        weightPackaging: number,
+        color: string,
+        description: string
     } | any = {}
 
     for (let i: number = 0; i < inputs.length; i++) {

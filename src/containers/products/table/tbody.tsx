@@ -19,10 +19,10 @@ const Tbody: React.FC<ComponentType> = ({ getProductsData, products }) => {
             {products.length > 0 ? products.map((value, index) => {
                 return (
                     <tr key={index}>
-                        <td>{index + 1}</td>
-                        <td>{value.name}</td>
-                        <td>{value.number}</td>
-                        <td>{value.price}</td>
+                        <td><Link to={`/product-details/?id=${value.id}`}>{index + 1}</Link></td>
+                        <td><Link to={`/product-details/?id=${value.id}`}>{value.name}</Link></td>
+                        <td><Link to={`/product-details/?id=${value.id}`}>{value.number}</Link></td>
+                        <td><Link to={`/product-details/?id=${value.id}`}>{value.price}</Link></td>
                         <td>
                             <Link to={`/add-products/?id=${value.id}`} style={{ textDecoration: 'none' }}>
                                 ویرایش

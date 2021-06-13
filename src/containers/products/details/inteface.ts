@@ -1,5 +1,5 @@
-export interface InitInterface {
-    products: {
+export interface init {
+    productData: {
         id: number,
         name: string,
         number: string,
@@ -11,6 +11,5 @@ export interface InitInterface {
         weightPackaging: number,
         color: string,
         description: string
-    }[];
+    } | undefined
 }
-

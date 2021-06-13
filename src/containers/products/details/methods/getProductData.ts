@@ -1,5 +1,5 @@
-// function for find object of array should edit
-export function getEditData(
+// function for find product
+export function getProductData(
     products: {
         id: number,
         name: string,

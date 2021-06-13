@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { Store } from './redux/store';
 // scss
 import './assets/scss/all.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <Provider store={Store}>
